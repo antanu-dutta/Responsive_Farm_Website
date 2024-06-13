@@ -13,6 +13,7 @@ import { Ghee } from "../Data Assets/Ghee";
 import { Juice } from "../Data Assets/Juice";
 import WhyFarm from "../Components/Why Farm/WhyFarm";
 import GiftSection from "../Components/Gift Section/GiftSection";
+import Grettings from "../Components/Greetings/Grettings";
 
 function Home() {
   return (
@@ -51,7 +52,11 @@ function Home() {
         title="Herbal Juice"
         subtitle="Pure, Organic herbal juices sourced from farm ingredients has no added sugar."
       />
-      <GiftSection />
+      {/* Here will be Gift Section (it will be added later) */}
+
+      {/* Here will be Customer love Section (it will be added later) */}
+
+      <Grettings />
     </div>
   );
 }
