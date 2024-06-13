@@ -1,7 +1,7 @@
 import React from "react";
 import BannerContainer from "../Components/Banner/BannerContainer";
 import IconStrip from "../Components/Icon Strip/IconStrip";
-import { firstStrip } from "../Data Assets/Iconstripdetails";
+import { firstStrip, secondStrip } from "../Data Assets/Iconstripdetails";
 import ShopCategory from "../Components/Shop Category/ShopCategory";
 import { ShopConcern, ConcernLogo } from "../Data Assets/ShopConcern";
 import { ShopProduct, productLogo } from "../Data Assets/ShopProduct";
@@ -14,6 +14,7 @@ import { Juice } from "../Data Assets/Juice";
 import WhyFarm from "../Components/Why Farm/WhyFarm";
 import GiftSection from "../Components/Gift Section/GiftSection";
 import Grettings from "../Components/Greetings/Grettings";
+import AmazonReview from "../Components/Amazon Review Section/AmazonReview";
 
 function Home() {
   return (
@@ -57,6 +58,12 @@ function Home() {
       {/* Here will be Customer love Section (it will be added later) */}
 
       <Grettings />
+      <AmazonReview />
+      <IconStrip Strip={secondStrip} />
+
+      {/* Customer Review Section */}
+
+      {/* Here will be Instagram Section for review  (It will be added here)*/}
     </div>
   );
 }

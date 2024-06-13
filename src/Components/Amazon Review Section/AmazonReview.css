@@ -1,0 +1,8 @@
+@media (min-width: 768px) {
+  .amazon-review {
+    background: url("https://farmnaturelle.com/cdn/shop/files/amazon_1.jpg?v=1696486290");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}

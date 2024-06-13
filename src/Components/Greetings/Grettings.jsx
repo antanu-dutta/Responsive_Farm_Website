@@ -17,7 +17,7 @@ function Grettings() {
             <img
               src="https://farmnaturelle.com/cdn/shop/files/ABOUT_2_280x.jpg?v=1703232158"
               alt=""
-              className="w-full"
+              className="w-full hidden md:block"
             />
           </div>
           <div className="greeting-image_content-wrapper md:flex-1">

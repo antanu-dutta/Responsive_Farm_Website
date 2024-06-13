@@ -1,6 +1,7 @@
 import React from "react";
 
 function IconStrip({ Strip }) {
+  console.log(Strip);
   return (
     <section className="bg-primary ">
       <div className="xl:container ">
@@ -8,7 +9,9 @@ function IconStrip({ Strip }) {
           <div className="">
             <div
               id="iconstrip-container"
-              className="grid grid-cols-2 gap-3 md:grid-cols-4 "
+              className={`grid grid-cols-2 gap-3 md:grid-cols-4 ${
+                Strip.length === 7 && "grid-cols-7"
+              }`}
             >
               {Strip.map((item, index) => (
                 <div
