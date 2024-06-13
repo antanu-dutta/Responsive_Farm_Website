@@ -1,0 +1,17 @@
+.ayurvedic_remedie_card_wrapper .ayurvedic_remedie_card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 8px 15px;
+}
+.ayurvedic_remedie_card {
+  min-height: 60px;
+}
+.ayurvedic_remedie_card img {
+  width: 40px;
+}
+.ayurvedic_remedie_card span {
+  font-weight: 600;
+}

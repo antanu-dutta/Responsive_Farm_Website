@@ -1,0 +1,13 @@
+.whyFam-content {
+  flex: 1;
+}
+.whyFam-content h3 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+}
+.whyFam-content p {
+  color: #cac5c5;
+  font-weight: 600;
+  font-size: 14px;
+}
