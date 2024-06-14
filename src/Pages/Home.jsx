@@ -59,7 +59,7 @@ function Home() {
 
       <Grettings />
       <AmazonReview />
-      <IconStrip Strip={secondStrip} />
+      {/* <IconStrip Strip={secondStrip} /> */}
 
       {/* Customer Review Section */}
 

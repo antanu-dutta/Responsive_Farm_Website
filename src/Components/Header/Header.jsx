@@ -1,14 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Header.css";
 import { PiCopySimpleBold } from "react-icons/pi";
 import { FaBars, FaSearch, FaUser } from "react-icons/fa";
 import { BsCart2 } from "react-icons/bs";
 import { IoSearch, IoPersonSharp } from "react-icons/io5";
 import { CiHeart } from "react-icons/ci";
+import { FaXmark } from "react-icons/fa6";
+import { MdKeyboardArrowRight } from "react-icons/md";
 
 function Header() {
   // coupon code
   let coupon = "NFARM100";
+
+  const [openMenu, setOpenMenu] = useState(false);
+
+  const handleNavbar = () => {
+    setOpenMenu(true);
+  };
 
   return (
     <div>
@@ -30,7 +38,8 @@ function Header() {
           <div className="px-1 py-2 xl:hidden  border border-red-800">
             <div className="flex justify-between items-center">
               <div id="menu-toggle-bar">
-                <FaBars className="text-2xl" />
+                <FaBars className="text-2xl" onClick={handleNavbar} />
+                {openMenu && <Navmenu setOpenMenu={setOpenMenu} />}
               </div>
               <div id="mobile-logo">
                 <img
@@ -120,5 +129,50 @@ function Header() {
     </div>
   );
 }
+
+const Navmenu = ({ setOpenMenu }) => {
+  return (
+    <div className="fixed top-0 left-0 h-screen w-screen z-[10] menubar-bg">
+      <div className=" h-full w-[80%] bg-white ">
+        <div className="menubar-container p-3">
+          <div className="flex justify-between items-center py-3 border-b-2 ">
+            <span className="text-xl font-bold">Menu</span>
+            <div className="p-2 rounded-lg bg-gray-700 text-white text-xl">
+              <FaXmark onClick={() => setOpenMenu(false)} />
+            </div>
+          </div>
+          <div className="menu-items-container">
+            <div className="flex items-center justify-between py-3 border-b-2 cursor-pointer">
+              <span className="font-normal text-gray-700 text-base">
+                Shop By Concern
+              </span>
+              <MdKeyboardArrowRight size={30} />
+            </div>
+            <div className="flex items-center justify-between py-3 border-b-2 cursor-pointer">
+              <span className="font-normal text-gray-700 text-base">
+                Shop By Products
+              </span>
+              <MdKeyboardArrowRight size={30} />
+            </div>
+            <div className="flex items-center justify-between py-3 border-b-2 cursor-pointer">
+              <span className="font-normal text-gray-700 text-base">
+                Business with us
+              </span>
+              <MdKeyboardArrowRight size={30} />
+            </div>
+            <div className="flex items-center justify-between py-3 border-b-2 cursor-pointer">
+              <span className="font-normal text-gray-700 text-base">
+                Consult an acharya(Doctor)
+              </span>
+            </div>
+            <div className="flex items-center justify-between py-3 border-b-2 cursor-pointer">
+              <span className="font-normal text-gray-700 text-base">Gift</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 export default Header;

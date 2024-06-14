@@ -1,0 +1,33 @@
+.upper-footer {
+  background: url("https://farmnaturelle.com/cdn/shop/files/Group_14856848.png?v=1696491609");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  padding: 50px 0 170px;
+}
+
+.upper-footer-logo {
+  width: 50px;
+}
+
+.lower-footer-links {
+  color: white;
+}
+
+.lower-footer-links li {
+  font-size: 14px;
+  font-weight: 600;
+  color: #ccc;
+}
+
+@media (min-width: 768px) {
+  .upper-footer-logo {
+    width: 80px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .upper-footer-logo {
+    width: 120px;
+  }
+}
