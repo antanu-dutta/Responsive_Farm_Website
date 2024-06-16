@@ -27,7 +27,7 @@ function Banner4() {
         alt="banner1"
         className="absolute -z-50 top-0 left-0 w-full h-full object-cover"
       />
-      <div className="w-1/2 ps-20">
+      <div className="w-3/4 ps-20">
         <span className="text-white font-semibold block mb-4 uppercase text-base">
           the most truested ayurvedic
         </span>
